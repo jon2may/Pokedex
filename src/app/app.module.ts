@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { PokedexPageComponent } from './pages/pokedex-page/pokedex-page.component';
+import { MyPokemonsPageComponent } from './pages/my-pokemons-page/my-pokemons-page.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    PokedexPageComponent
+    PokedexPageComponent,
+    MyPokemonsPageComponent
   ],
   imports: [
     BrowserModule,
