@@ -7,6 +7,9 @@ import { HeaderComponent } from './components/header/header.component';
 import { PokedexPageComponent } from './pages/pokedex-page/pokedex-page.component';
 import { MyPokemonsPageComponent } from './pages/my-pokemons-page/my-pokemons-page.component';
 import { PokemonComponent } from './components/pokemon/pokemon.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PokemonsListComponent } from './components/pokemons-list/pokemons-list.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -14,13 +17,12 @@ import { PokemonComponent } from './components/pokemon/pokemon.component';
     HeaderComponent,
     PokedexPageComponent,
     MyPokemonsPageComponent,
-    PokemonComponent
+    PokemonComponent,
+    PokemonsListComponent,
+    LoaderComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
